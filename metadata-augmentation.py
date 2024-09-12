@@ -265,8 +265,8 @@ def format_unix_time(unix_time):
     return time.strftime(f'%Y년 %m월 %d일 %H시 %M분 %S초 ({weekday_dict[time.strftime('%A', time.localtime(int(unix_time)))]})', time.localtime(int(unix_time)))
 
 if __name__ == "__main__":
-    csv_file_path = './Desktop/extract.csv'
-    output_jsonl_file = './Desktop/output.jsonl'
+    csv_file_path = './extract.csv'
+    output_jsonl_file = './output.jsonl'
 
     metadata_list = read_metadata_from_csv(csv_file_path)
 
